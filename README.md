@@ -3,7 +3,7 @@
 * :memo: You can find this dataset from https://data.insideairbnb.com/france/ile-de-france/paris/2024-09-06/data/calendar.csv.gz
 * ![image](https://github.com/user-attachments/assets/06946a63-57fb-4ab2-a3f3-84dbb6466b4a)
 
-## 🧑‍💻 Let`s import the file
+# 🧑‍💻 Let`s import the calendar file
 ```python
 import pandas as pd
 calinder = pd.read_csv("/Users/reemabalharith/Desktop/MACHINE LEARNING/calendar.csv")
@@ -45,6 +45,27 @@ plt.xlabel('Available (t/f)')
 plt.show()
 ````
 <img src="https://github.com/user-attachments/assets/737901c6-16c9-42b8-aef9-d33e1ace25af" alt="Value Counts Output" width="600"/>
+
+## 📈 5- Plot the busiest day
+```python
+busiest_dates.head(10).plot(kind='bar', color='pink')
+plt.title('Top 10 Busiest Dates')
+plt.ylabel('Number of Listings Unavailable')
+plt.xlabel('Date')
+plt.show()
+````
+# 🧑‍💻 Let`s import the listings file
+* 📝 You can find this dataset from https://data.insideairbnb.com/france/ile-de-france/paris/2024-09-06/data/listings.csv.gz
+```python
+listings= pd.read_csv("/Users/reemabalharith/Desktop/MACHINE LEARNING/listings.csv")
+listings
+```
+![image](https://github.com/user-attachments/assets/886bac3c-2107-4c9d-a09a-e7eb863664dc)
+
+
+
+
+
 
 
 
