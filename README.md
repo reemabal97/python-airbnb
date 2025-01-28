@@ -1,8 +1,8 @@
-![image](https://github.com/user-attachments/assets/4b85868f-89f7-43ca-bc7b-203d402fdbe5)# Analysis based on real Airbnb data
+# Analysis based on real Airbnb data
 * We are dealing with Paris's calendar file in this dataset.
 * :memo: You can find this dataset from https://data.insideairbnb.com/france/ile-de-france/paris/2024-09-06/data/calendar.csv.gz
-* ![image](https://github.com/user-attachments/assets/06946a63-57fb-4ab2-a3f3-84dbb6466b4a)
-
+![image](https://github.com/user-attachments/assets/06946a63-57fb-4ab2-a3f3-84dbb6466b4a)
+![image](https://github.com/user-attachments/assets/4b85868f-89f7-43ca-bc7b-203d402fdbe5)
 # 🧑‍💻 Let`s import the calendar file
 ```python
 import pandas as pd
