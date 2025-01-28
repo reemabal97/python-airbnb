@@ -159,6 +159,26 @@ m
 <img src="https://github.com/user-attachments/assets/13f71a6b-3ead-473b-93fa-bd049f95f528" alt="Value Counts Output" width="600"/>
 
 
+# What is the average price of listings by room type?
+```python
+average_price_per_room = listings.groupby("room_type")["price"].mean()
+
+# Plot the result
+plt.figure(figsize=(8, 5))
+average_price_per_room.plot(kind="bar", color=['skyblue', 'lightgreen', 'salmon', 'pink'], edgecolor="black")
+
+plt.title("Average Price by Room Type", fontsize=14)
+plt.xlabel("Room Type", fontsize=12)
+plt.ylabel("Average Price ($)", fontsize=12)
+plt.xticks(rotation=0)
+plt.grid(axis="y", linestyle="--", alpha=0.7)
+
+plt.show()
+```
+<img src="https://github.com/user-attachments/assets/38e41adf-724e-4bb8-a488-1942f38f8caa" alt="Value Counts Output" width="600"/>
+
+
+
 
 
 
