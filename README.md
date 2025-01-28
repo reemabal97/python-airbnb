@@ -155,7 +155,7 @@ m
 # 📌 How do I find location for my city?
 * Type your city name on google maps
 * Right click
-* The firt button
+* The first button
 <img src="https://github.com/user-attachments/assets/13f71a6b-3ead-473b-93fa-bd049f95f528" alt="Value Counts Output" width="600"/>
 
 
