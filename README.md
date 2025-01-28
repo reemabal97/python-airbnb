@@ -177,6 +177,30 @@ plt.show()
 ```
 <img src="https://github.com/user-attachments/assets/38e41adf-724e-4bb8-a488-1942f38f8caa" alt="Value Counts Output" width="600"/>
 
+# Which neighbourhood has the highest number of listings?
+```python
+import matplotlib.pyplot as plt
+
+# Find the most common neighbourhood by listing count
+most_common_neighbourhood = listings["neighbourhood"].value_counts().head(10)
+
+# Plot the result
+plt.figure(figsize=(10, 6))
+most_common_neighbourhood.plot(kind="bar", color="lightblue", edgecolor="black")
+
+plt.title("Top 10 Neighbourhoods with the Most Listings", fontsize=14)
+plt.xlabel("Neighbourhood", fontsize=12)
+plt.ylabel("Number of Listings", fontsize=12)
+plt.xticks(rotation=45, ha="right")
+plt.grid(axis="y", linestyle="--", alpha=0.7)
+
+# Show the plot
+plt.show()
+```
+<img src="https://github.com/user-attachments/assets/54fb99d8-0480-4c06-89b6-804bc1139803" alt="Value Counts Output" width="600"/>
+
+
+
 
 
 
