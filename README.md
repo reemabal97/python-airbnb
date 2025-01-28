@@ -62,6 +62,48 @@ listings
 ```
 ![image](https://github.com/user-attachments/assets/886bac3c-2107-4c9d-a09a-e7eb863664dc)
 
+```python
+listings.columns
+```
+![image](https://github.com/user-attachments/assets/e434ccd2-d81b-4b09-b085-b1451d9428f4)
+
+## ✅ Room type and price is given seperately
+```python
+import matplotlib.pyplot as plt
+price_by_room = listings.groupby('room_type')['price'].mean()
+print(price_by_room)
+
+# Plot price by room type
+price_by_room.plot(kind='bar', color='pink')
+plt.title('Average Price by Room Type')
+plt.ylabel('Average Price')
+plt.xlabel('Room Type')
+
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/51ff6447-f3b3-4092-b849-4d432be0e55a)
+
+## 🚀 Top 10 neighborhoods with the most listings
+```python
+neighborhood_counts = listings['neighbourhood'].value_counts().head(10)
+print("Top 10 Neighborhoods by Listings:")
+print(neighborhood_counts)
+
+# Plot neighborhoods with most listings
+neighborhood_counts.plot(kind='bar', color='lightpink')
+plt.title('Top 10 Neighborhoods by Listings')
+plt.ylabel('Number of Listings')
+plt.xlabel('Neighborhood')
+plt.xticks(rotation=90)
+plt.show()
+```
+<img src="(https://github.com/user-attachments/assets/2b50a661-c376-49a6-9509-25e7be346524)" alt="Value Counts Output" width="600"/>
+
+
+
+
+
+
 
 
 
